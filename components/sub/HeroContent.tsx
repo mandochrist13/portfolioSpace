@@ -7,10 +7,14 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/utils/motion";
+import { useState } from "react";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import Modal from "./Modal";
 
 const HeroContent = () => {
+
+  const [showModal, setShowModal] = useState(false);
   return (
     <motion.div
       initial="hidden"
@@ -53,10 +57,13 @@ connaissance des frameworks front-end.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
-          className="p-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="p-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]" onClick={()  => setShowModal(true)}
         >
           Voir mon CV
         </motion.a>
+        <div>
+          <Modal isVisible={showModal} onClose={() => setShowModal(false) } />
+        </div>
       </div>
 
       <motion.div
