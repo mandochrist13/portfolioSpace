@@ -4,35 +4,67 @@ import Encryption from "@/components/main/Encryption";
 import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
-  // Ajout de l'audioRef pour lire la musique
   const audioRef = useRef<HTMLAudioElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    if (audioRef.current) {
+      audioRef.current.play();
+      setIsPlaying(true);
+    }
+  };
+
+  const handlePause = () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
 
   useEffect(() => {
+    // Tentative de lecture automatique (sera bloquée dans la plupart des navigateurs)
     if (audioRef.current) {
-      audioRef.current.play().catch((error) => {
-        // Gestion d'erreur si la lecture automatique est bloquée
-        console.log("Lecture automatique bloquée :", error);
+      audioRef.current.play().catch(() => {
+        console.log("Lecture automatique bloquée");
       });
     }
   }, []);
 
   return (
     <main className="h-full w-full">
-      {/* L'audio est défini ici et sera lu automatiquement si permis */}
       <audio
         ref={audioRef}
-        src="/House of The Dragon_ Targaryen Theme _ EPIC VERSION (Game of Thrones x House of the Dragon).mp3"
+        src="/HouseOfTheDragon.mp3"
         preload="auto"
         loop
       />
+
       <div className="flex flex-col gap-20">
         <Hero />
         <Skills />
         <Encryption />
         <Projects />
+      </div>
+
+      <div className="fixed z-20 bottom-5 right-5">
+        {!isPlaying ? (
+          <button
+            onClick={handlePlay}
+            className="bg-green-500 text-white p-2 rounded"
+          >
+            Play Music
+          </button>
+        ) : (
+          <button
+            onClick={handlePause}
+            className="bg-red-500 text-white p-2 rounded"
+          >
+            Pause Music
+          </button>
+        )}
       </div>
     </main>
   );
