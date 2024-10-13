@@ -15,15 +15,15 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-col md:flex-row items-center justify-center  px-5 md:px-20 mt-40 w-full z-[20]"
     >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+      <div className="h-full w-full flex flex-col gap-5 justify-center md:items-start items-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
+          <h1 className="md:text-[#ba9cff] text-slate-800 text-[13px]">
             Développeur web Front-End
           </h1>
         </motion.div>
@@ -53,7 +53,7 @@ connaissance des frameworks front-end.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="p-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
           Voir mon CV
         </motion.a>
