@@ -48,7 +48,7 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-lg text-white my-5 max-w-[600px]"
         >
           Passionné par l&apos;univers numérique et fort de plus de trois ans
 d&apos;expérience dans la conception et le développement

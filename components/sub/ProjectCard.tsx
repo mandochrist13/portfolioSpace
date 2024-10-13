@@ -1,5 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import {
+  slideInFromLeft
+} from "@/utils/motion";
 
 interface Props {
   src: string;
@@ -24,12 +28,14 @@ const ProjectCard = ({ src, title, description, lien }: Props) => {
         <p className="mt-2 text-gray-300">{description}</p>
       </div>
       <div className="p-2">
-                <a
+                <motion.a
+                variants={slideInFromLeft(1)}
                   href={lien}
-                  className="p-2 relative z-20 border rounded mt-6 border-[#bbf3ff] text-[#bbf3ff]  hover:bg-[#bbf3ff] hover:text-black"
+                  className="p-2 relative button-primary z-20 rounded mt-6 text-[#bbf3ff]  hover:bg-[#bbf3ff] hover:text-black"
                 >
-                  En savoir plus
-                </a>
+                  
+                  Visualiser le projet
+                </motion.a>
               </div>
     </div>
   );
