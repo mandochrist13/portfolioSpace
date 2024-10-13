@@ -8,23 +8,50 @@ const Projects = () => {
       id="projects"
     >
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-        My Projects
+        Mes Projets
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/phyto.png"
+          title="Phytoscience Gabon"
+          description="Phyto Science est une entreprise mondiale de santé et de bien-être."
+          lien= "https://phytoscience.vercel.app/"
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/onmaced.png"
+          title="Cabinet Onmaced"
+          description="Le Cabinet d’Expertise et de Conseils Stratégiques ONMACED & fils est spécialisé dans les secteurs Finance, Mines et Hydrocarbures."
+          lien= "https://cabinet-onmaced.com/"
         />
         <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/desty.png"
+          title="Desty Shop"
+          description="Boutique en ligne où la mode et les tendances se rencontrent "
+          lien= "https://destyshop.fr/"
+        />
+        <ProjectCard
+          src="/keepHeart.png"
+          title="Keep earth"
+          description="Un Avertissement pour notre Planète : L'Histoire de Nos Choix. "
+          lien= "https://projet-nasa.vercel.app/"
+        />
+        <ProjectCard
+          src="/mbulu.png"
+          title="Mbulu"
+          description="Le dictionnaire numérique interactif dédié aux langues gabonaises. "
+          lien= "https://dev-mbulu.netlify.app/"
+        />
+        <ProjectCard
+          src="/suncom.png"
+          title="Suncomcacatier"
+          description="SUNCOM COCOTIERS est une PME de droit gabonais dont l’offre de services s’articule à la vente des solutions et des produits aux particuliers et aux Entreprises. "
+          lien= "https://suncomcocotiers.com/fr/"
+        />
+        <ProjectCard
+          src="/fourniture.png"
+          title="Fourniture en ligne"
+          description="Fourniture en Ligne est la solution innovante pour simplifier la préparation de la rentrée scolaire. "
+          lien= "https://fournitureenligne.com/"
         />
       </div>
     </div>
