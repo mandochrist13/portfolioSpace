@@ -26,7 +26,7 @@ const ProjectCard = ({ src, title, description, lien }: Props) => {
       <div className="p-2">
                 <a
                   href={lien}
-                  className="p-2 border rounded mt-6 border-[#bbf3ff] text-[#bbf3ff]  hover:bg-[#bbf3ff] hover:text-black"
+                  className="p-2 relative z-20 border rounded mt-6 border-[#bbf3ff] text-[#bbf3ff]  hover:bg-[#bbf3ff] hover:text-black"
                 >
                   En savoir plus
                 </a>
