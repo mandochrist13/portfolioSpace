@@ -14,7 +14,7 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
             <div className='relative w-[80%] h-auto flex flex-col items-center bg-white p-4 rounded-lg'>
                 <button className='text-black text-xl self-end' onClick={onClose}>X</button>
                 <Image
-                    src="/CV-mando.png"
+                    src="/CvMando.png"
                     priority
                     quality={100}
                     alt="image christo"

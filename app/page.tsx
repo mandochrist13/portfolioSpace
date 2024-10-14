@@ -5,6 +5,8 @@ import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
 import { useEffect, useRef, useState } from "react";
+import { MusicalNoteIcon } from "@heroicons/react/24/solid";
+import { SpeakerXMarkIcon } from "@heroicons/react/20/solid";
 
 export default function Home() {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -53,16 +55,17 @@ export default function Home() {
         {!isPlaying ? (
           <button
             onClick={handlePlay}
-            className="bg-green-500 text-white p-2 rounded"
+            className="bg-green-500 flex text-white p-2 rounded"
           >
-            Play Music
+            <MusicalNoteIcon className="text-white mr-[5px] h-5 w-5" />
+            Jouer
           </button>
         ) : (
           <button
             onClick={handlePause}
-            className="bg-red-500 text-white p-2 rounded"
-          >
-            Pause Music
+            className="bg-red-500 flex text-white p-2 rounded"
+          ><SpeakerXMarkIcon className="text-white mr-[5px] h-5 w-5" />
+            Stop
           </button>
         )}
       </div>

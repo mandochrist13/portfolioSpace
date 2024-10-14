@@ -43,7 +43,7 @@ const Projects = () => {
         />
         <ProjectCard
           src="/suncom.png"
-          title="Suncomcacatier"
+          title="Suncomcocotier"
           description="SUNCOM COCOTIERS est une PME de droit gabonais dont l’offre de services s’articule à la vente des solutions et des produits aux particuliers et aux Entreprises. "
           lien= "https://suncomcocotiers.com/fr/"
         />
