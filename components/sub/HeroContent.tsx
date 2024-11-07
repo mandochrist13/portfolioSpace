@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { useState } from "react";
 import { SparklesIcon } from "@heroicons/react/24/solid";
+import { InboxArrowDownIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Modal from "./Modal";
 
@@ -55,12 +56,18 @@ d&apos;expérience dans la conception et le développement
 d&apos;applications web, compétent en web design et avec une
 connaissance des frameworks front-end.
         </motion.p>
-        <motion.a
+        <div className="flex items-center justify-center">
+          <div className="py-3 px-7 flex relative animate-ping button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]" onClick={()  => setShowModal(true)}></div>
+          <motion.a
           variants={slideInFromLeft(1)}
-          className="p-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]" onClick={()  => setShowModal(true)}
+           href="/CV mando.pdf"
+          download="CV_MANDO.pdf"
+          className="p-2 flex absolute button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]" onClick={()  => setShowModal(true)}
         >
-          Voir mon CV
+           <InboxArrowDownIcon className="text-[#b49bff]  mr-[10px] h-5 w-5" />mon CV
         </motion.a>
+        </div>
+        
         <div>
           <Modal isVisible={showModal} onClose={() => setShowModal(false) } />
         </div>

@@ -53,6 +53,12 @@ const Projects = () => {
           description="Fourniture en Ligne est la solution innovante pour simplifier la préparation de la rentrée scolaire. "
           lien= "https://fournitureenligne.com/"
         />
+        <ProjectCard
+          src="/restaurant.png"
+          title="Saveur Bantu"
+          description="Saveurs Bantu est né du désir de partager l`authentique cuisine gabonaise avec le monde. "
+          lien= "https://restaurant-flax-three.vercel.app/"
+        />
       </div>
     </div>
   );

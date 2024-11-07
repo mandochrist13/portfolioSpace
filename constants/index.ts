@@ -76,12 +76,12 @@ export const Skill_data = [
       src: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxLjJlbSIgaGVpZ2h0PSIxLjJlbSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTE5IDNhMiAyIDAgMCAxIDIgMnYxNGEyIDIgMCAwIDEtMiAySDVhMiAyIDAgMCAxLTItMlY1YTIgMiAwIDAgMSAyLTJ6bS0uNSAxNS41di01LjNhMy4yNiAzLjI2IDAgMCAwLTMuMjYtMy4yNmMtLjg1IDAtMS44NC41Mi0yLjMyIDEuM3YtMS4xMWgtMi43OXY4LjM3aDIuNzl2LTQuOTNjMC0uNzcuNjItMS40IDEuMzktMS40YTEuNCAxLjQgMCAwIDEgMS40IDEuNHY0Ljkzek02Ljg4IDguNTZhMS42OCAxLjY4IDAgMCAwIDEuNjgtMS42OGMwLS45My0uNzUtMS42OS0xLjY4LTEuNjlhMS42OSAxLjY5IDAgMCAwLTEuNjkgMS42OWMwIC45My43NiAxLjY4IDEuNjkgMS42OG0xLjM5IDkuOTR2LTguMzdINS41djguMzd6Ii8+PC9zdmc+",
       link: "https://www.linkedin.com/in/christ-of-fair-mando-6610b02a5/",
     },
-    {
-      id:2,
-      name: "Facebook",
-      src: "/facebook.svg",
-      link: "https://www.facebook.com/profile.php?id=100087880990369",
-    },
+    // {
+    //   id:2,
+    //   name: "Facebook",
+    //   src: "/facebook.svg",
+    //   link: "https://www.facebook.com/profile.php?id=100087880990369",
+    // },
     {
       id:3,
       name: "Whatsapp",

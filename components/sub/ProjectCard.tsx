@@ -31,6 +31,7 @@ const ProjectCard = ({ src, title, description, lien }: Props) => {
                 <motion.a
                 variants={slideInFromLeft(1)}
                   href={lien}
+                   target="_blank"
                   className="p-2 relative button-primary z-20 rounded mt-6 text-[#bbf3ff]  hover:bg-[#bbf3ff] hover:text-black"
                 >
                   
