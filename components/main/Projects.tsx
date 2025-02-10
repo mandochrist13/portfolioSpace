@@ -15,7 +15,7 @@ const Projects = () => {
           src="/phyto.png"
           title="Phytoscience Gabon"
           description="Phyto Science est une entreprise mondiale de santé et de bien-être."
-          lien= "https://phytoscience.vercel.app/"
+          lien= "https://phytosciencegabon.com/"
         />
         <ProjectCard
           src="/onmaced.png"
@@ -54,10 +54,16 @@ const Projects = () => {
           lien= "https://fournitureenligne.com/"
         />
         <ProjectCard
-          src="/restaurant.png"
-          title="Saveur Bantu"
-          description="Saveurs Bantu est né du désir de partager l`authentique cuisine gabonaise avec le monde. "
-          lien= "https://restaurant-flax-three.vercel.app/"
+          src="/ecmac.png"
+          title="ECMAC"
+          description="1ère école d'Afrique Centrale, spécialisée dans les métiers de la Monétique & TES. "
+          lien="https://www.ecmac-gabon.org/"
+        />
+        <ProjectCard
+          src="/sgts.png"
+          title="SGTS bazar"
+          description="Plateforme e-commerce moderne de vente en tout genre"
+          lien="https://bazar-lilac.vercel.app/"
         />
       </div>
     </div>

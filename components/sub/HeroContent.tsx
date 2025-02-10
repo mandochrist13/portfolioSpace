@@ -61,7 +61,7 @@ connaissance des frameworks front-end.
           <motion.a
           variants={slideInFromLeft(1)}
            href="/CV mando.pdf"
-          download="CV_MANDO.pdf"
+          download="CV_Mando_christ.pdf"
           className="p-2 flex absolute button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]" onClick={()  => setShowModal(true)}
         >
            <InboxArrowDownIcon className="text-[#b49bff]  mr-[10px] h-5 w-5" />mon CV
