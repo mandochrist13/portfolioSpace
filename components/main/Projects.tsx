@@ -48,10 +48,10 @@ const Projects = () => {
           lien= "https://suncomcocotiers.com/fr/"
         />
         <ProjectCard
-          src="/fourniture.png"
-          title="Fourniture en ligne"
-          description="Fourniture en Ligne est la solution innovante pour simplifier la préparation de la rentrée scolaire. "
-          lien= "https://fournitureenligne.com/"
+          src="/byems.png"
+          title="Accessoirs by EMS"
+          description="Découvrez notre collection exclusive de bijoux de luxe "
+          lien= "https://accessoiresbyems.com/"
         />
         <ProjectCard
           src="/ecmac.png"
@@ -60,10 +60,10 @@ const Projects = () => {
           lien="https://www.ecmac-gabon.org/"
         />
         <ProjectCard
-          src="/sgts.png"
-          title="SGTS bazar"
-          description="Plateforme e-commerce moderne de vente en tout genre"
-          lien="https://bazar-lilac.vercel.app/"
+          src="/guidefeg.png"
+          title="Guide numérique de la FEG"
+          description="Le Guide Numérique des PME pour les PME Gabonaises est une initiative de la Fédération des Entreprises du Gabon (FEG) visant à faciliter l'accès à l'information juridique pour les petites et moyennes entreprises."
+          lien="https://lafeg-guide.vercel.app/"
         />
       </div>
     </div>
